@@ -11,13 +11,22 @@ Then, research the question to expand on your answer. Even if you feel you have 
 Your answer:i beleive that i can go in to my files and Cohort.rb file and type in has_many student and the go into the Students.rb and enter belongs to Cohorts
 
 
-Researched answer:
+Researched answer: belongs_to establishes a connection with another model . and each new model that this is assoscationed  with will have that forieng key attached .
+
+
+
+
 
 2. Which RESTful routes must always be passed params? Why?
 
 Your answer: create and delete both needs params because we dont want to be vulnierable to a sql injection and have someone pass in extra params or pass less than is require
 
-Researched answer:
+Researched answer:update, show and delete. they are all used for a specific instance in that DB .
+
+
+
+
+
 
 3. Name three rails generator commands. What is created by each?
 
@@ -31,6 +40,11 @@ Researched answer:
 
 
 
+rails gernerate controller -creates a controller file, a view file, a functional test file, a helper for the view, a JavaScript file, and a stylesheet file.
+
+rails generate model -Ruby class that is used to represent data, models can interact with the database through  Rails Active Record. 
+
+rails generate migration -is a way to make changes to your database. you can use key words such as , add_column, remove_column , add_reference, create_table, change_table,change_column, add_belongs_to and add_foreign_key. to use your rails magic on whatever column.
 
 
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
